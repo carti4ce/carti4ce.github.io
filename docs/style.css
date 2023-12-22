@@ -1,6 +1,6 @@
 body {
     color: antiquewhite;
-    background-image: url('../wallpaper.jpg');
+    background-image: url('assets/images/wallpaper.jpg');
     background-size: 100% 100%;
     margin: 0;
 }
@@ -95,7 +95,7 @@ input {
 #searchbutton {
     height: 18px;
     min-width: 18px;
-    background-image: url('../images/search-icon.png');
+    background-image: url('assets/images/search-icon.png');
     background-size: contain;
     cursor: pointer;
 }
