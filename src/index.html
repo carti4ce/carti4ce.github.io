@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <style>
+        body {
+            font-family:'Montserrat';
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+
+        <div id="main">
+            <div id="current">
+                <div id="info">
+                    <h1 id="city">Denver</h1>
+                    <h2 id="date">12/22/2023</h2>
+                    <h3 class="time">2:33 AM</h3>
+                </div>
+                <div id="center">
+                    <h1 id="todaytemp">32</h1>
+                    <i class="wi wi-day-sunny" id="mainicon"></i>
+                    <h1 id="todayhighlow">H: 54 L: 33</h1>
+                </div>
+                <div id="extrainfo">
+                    <h3>Feels Like: </h3>
+                    <h3>Wind Speed: </h3>
+                    <h3>Humidity: </h3>
+                </div>
+            </div>
+            <div id="bottom">
+                <div id="searchbar">
+                    <input type="text" placeholder="Search..">
+                    <div id="searchbutton"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="forecast">
+            <div id="firstday">
+                <h1>Tomorrow</h1>
+                <i class="wi wi-day-sunny" id="icon"></i>
+                <h1>H: 55 L: 32</h1>
+            </div>
+            <div id="secondday">
+                <h1>Saturday</h1>
+                <i class="wi wi-day-sunny" id="icon"></i>
+                <h1>H: 55 L: 30</h1>
+            </div>
+            <div id="thirdday">
+                <h1>Sunday</h1>
+                <i class="wi wi-day-sunny" id="icon"></i>
+                <h1>H: 58 L: 27</h1>
+            </div>
+        </div>
+        
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
