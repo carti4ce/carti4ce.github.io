@@ -52,13 +52,13 @@ function createWeatherData(response_1) {
 
 
 
-function loadWeatherData(API_KEY, loc) {
-    return fetch(`http://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${loc}&days=3`, { mode: 'cors' })
-        .then(function(response) {
-            return response.json()
-        }).catch(function(response) {
-            alert('Please Enter a Valid City Name or Zip Code')
-        });
+async function loadWeatherData(API_KEY, loc) {
+    try {
+        const response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${loc}&days=3`, { mode: 'cors' });
+        return await response.json();
+    } catch (response_1) {
+        alert('Please Enter a Valid City Name or Zip Code');
+    }
     
 }
 

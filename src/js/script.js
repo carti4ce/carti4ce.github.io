@@ -29,8 +29,10 @@ let city = 'denver'
 const SEARCH_BUTTON = document.querySelector('#searchbutton')
 const SEARCH_BAR = document.querySelector('#input')
 
-SEARCH_BUTTON.addEventListener('click', () => {
+SEARCH_BUTTON.addEventListener('click', async () => {
     city = SEARCH_BAR.value
     SEARCH_BAR.value = '';
-    loadWeatherData(API_KEY, city).then(data => weatherData = createWeatherData(data));
+    let rawData = await loadWeatherData(API_KEY, city);
+    weatherData = createWeatherData(rawData);
+    console.log(weatherData);
 });
