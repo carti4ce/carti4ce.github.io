@@ -12,6 +12,12 @@ input {
     color: #f5f5f5;
 }
 
+h1 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 ::placeholder {
     color: white;
     opacity: 0.6;
@@ -116,8 +122,6 @@ h2#date {
 
 h1#city {
     font-size: 45px;
-}
-
-h1 {
-    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
