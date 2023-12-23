@@ -1,7 +1,7 @@
 // 'http://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${city}'
 // API KEY: 1f36615869f94a8f85264242232212
 
-import { loadWeatherData } from "./api_functions"
+import { createWeatherData, loadWeatherData } from "./api_functions"
 
 const API_KEY = '1f36615869f94a8f85264242232212'
 
@@ -12,6 +12,8 @@ const TODAY_HILO = document.querySelector('#todayhighlow')
 const FEELS_LIKE = document.querySelector('#feelslike')
 const HUMIDITY = document.querySelector('#humidity')
 const WIND_SPEED = document.querySelector('#windspeed')
+
+let weatherData;
 
 let todayWeather = {
     name: CITY_NAME,
@@ -30,5 +32,5 @@ const SEARCH_BAR = document.querySelector('#input')
 SEARCH_BUTTON.addEventListener('click', () => {
     city = SEARCH_BAR.value
     SEARCH_BAR.value = '';
-    console.log(loadWeatherData(API_KEY, city).name)
+    loadWeatherData(API_KEY, city).then(data => weatherData = createWeatherData(data));
 });
