@@ -83,6 +83,7 @@ h1 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 25px;
 }
 
 #extrainfo {
@@ -111,17 +112,22 @@ h1 {
     text-align: center;
 }
 
-h3.time {
-    margin-top: 0px;
+h2#time {
+    margin-top: 10px;
 }
 
-h2#date {
-    margin-bottom: 8px;
-    margin-top: 10px;
+h3#country {
+    margin-bottom: 15px;
+    margin-top: 4px;
 }
 
 h1#city {
     font-size: 45px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 40px;
+    margin-bottom: 8px;
+}
+
+h1#todaytemp {
+    margin-bottom: 20px;
+    font-size: 40px;
 }

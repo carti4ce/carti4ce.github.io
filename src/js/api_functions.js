@@ -3,6 +3,7 @@ function createWeatherData(response_1) {
 
     let today = {
         name: response_1.location.name,
+        time: response_1.location.localtime,
         country: response_1.location.country,
         temp_f: response_1.current.temp_f,
         temp_c: response_1.current.temp_c,
