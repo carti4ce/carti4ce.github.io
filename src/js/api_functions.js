@@ -5,6 +5,8 @@ function createWeatherData(response_1) {
         name: response_1.location.name,
         time: response_1.location.localtime,
         country: response_1.location.country,
+        icon: response_1.current.condition.icon,
+        condition: response_1.current.condition.text,
         temp_f: response_1.current.temp_f,
         temp_c: response_1.current.temp_c,
         feelslike_c: response_1.current.feelslike_c,

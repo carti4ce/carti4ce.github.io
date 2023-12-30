@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" type="text/css" href="../src/style.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <style>
@@ -22,10 +22,9 @@
                     <h1 id="city">Denver</h1>
                     <h3 id="country">United States of America</h3>
                     <h2 id="time">2:33 AM</h2>
-                </div>
-                <div id="center">
                     <h1 id="todaytemp">32</h1>
-                    <i class="wi wi-day-sunny" id="mainicon"></i>
+                    <h2 id="conditiontext">Partly Cloudy</h2>
+                    <img src="//cdn.weatherapi.com/weather/64x64/day/116.png" alt="weather icon" id="iconimg">
                 </div>
                 <div id="extrainfo">
                     <h3 id="feelslike">Feels Like: </h3>
@@ -43,19 +42,19 @@
 
 
         <div class="forecast">
-            <div id="firstday">
+            <div id="firstday" class="forecastheader">
                 <h1>Tomorrow</h1>
-                <i class="wi wi-day-sunny" id="icon"></i>
+                <img src="//cdn.weatherapi.com/weather/64x64/day/116.png" alt="weather icon" class="icon">
                 <h1>H: 55 L: 32</h1>
             </div>
-            <div id="secondday">
+            <div id="secondday" class="forecastheader">
                 <h1>Saturday</h1>
-                <i class="wi wi-day-sunny" id="icon"></i>
+                <img src="//cdn.weatherapi.com/weather/64x64/day/116.png" alt="weather icon" class="icon">
                 <h1>H: 55 L: 30</h1>
             </div>
-            <div id="thirdday">
+            <div id="thirdday" class="forecastheader">
                 <h1>Sunday</h1>
-                <i class="wi wi-day-sunny" id="icon"></i>
+                <img src="//cdn.weatherapi.com/weather/64x64/day/116.png" alt="weather icon" class="icon">
                 <h1>H: 58 L: 27</h1>
             </div>
         </div>
